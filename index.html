@@ -30,7 +30,7 @@
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" alt="company logo" /></a>
+            <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" alt="company logo"/></a>
             <button class="navbar-toggler ml-auto" type="button"   data-toggle="collapse" data-target="#nucampNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -54,7 +54,7 @@
             </div>
             <div class="col">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail" />
+                    <img src="img/breadcrumb-trail-thumb.jpg" class="d-flex mr-3 img-thumbnail"  alt="Breadcrumb Trail">                    
                     <div class="media-body align-self-center">
                         <h3>Our Campsites</h3>
                         <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>
@@ -68,8 +68,13 @@
                 <h2>Featured Campsites</h2>
             </div>
             <div class="col">
-                <h3>React Lake Campground</h3>
-                <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                <div class="media">
+                    <div class="media-body align-self-center">
+                    <h3>React Lake Campground</h3>
+                    <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                    </div>
+                    <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="React Lake">
+                </div>
             </div>
         </div>
 
@@ -86,6 +91,45 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-sm-6 mx-auto">
+                <div class="card">  
+                    <h3 class="card-header bg-info text-white">Reserve a campsite</h3>
+                    <div class="card-body">
+                        <form>             <!--form-->
+                            <div class="col-form-label">    <!--First row div--> 
+                                <div class="row">                             
+                                    <label class="col-sm-6">Number of Campers:
+                                            <select class="form-control name= numCampers id=numCampers">
+                                                <option value="select">Select...</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                            </select>
+                                    </label> 
+                                </div>
+                            </div>   
+                            <div class="form-group">               <!--second row div-->
+                                <div class="row">                                
+                                    <label for="date">Date</label>
+                                    <div class="col-sm-6">
+                                    <input type="date" id="date" name="date" class="form-control"/>
+                                    </div>
+                                </div>
+                            </div>   
+                            <div class="row">                   <!--third row div--> 
+                                <div class="col-sm-6">
+                                <button type="submit" class="btn btn-primary">Search</button>
+                                </div>
+                            </div>    
+                        </form>
+                    </div>
+                </div>
+            </div>    
         </div>
     </div>
 
@@ -122,4 +166,4 @@
 
 </body>
 
-</html>
+</htmlgit add .
